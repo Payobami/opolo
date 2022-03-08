@@ -42,6 +42,7 @@
   -moz-background-size: cover;
   background-size: cover;
   background-position: center;
+  padding-bottom: 30px;
 }
 .row5 {
   min-height: 500px;
@@ -98,5 +99,23 @@
 @media only screen and (min-width: 650px) {
   .menuWidth {
     width: 800px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .spiralLine {
+    min-height: 200px;
+    background: url("../images/group-lines.png") no-repeat;
+    margin-top: -100px;
+    display: none;
+  }
+  .spiralAnim {
+    background: url("../images/spiralanime.gif") top -100px left -20px no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 300px;
+  }
+  .authBg {
+    display: none;
   }
 }

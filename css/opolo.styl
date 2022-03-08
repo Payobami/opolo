@@ -41,6 +41,8 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
     background-image: linear-gradient(rgba(7,1,20,0.7), rgba(8,1,20,0.8)), url('../images/bgx.png') no-repeat
     background-size: cover
     background-position: center
+    padding-bottom: 30px
+
 
 .row5
     min-height: 500px
@@ -103,3 +105,20 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
 +above('m')
     .menuWidth
         width: 800px !important 
+    
+
+
+ +below('m')   
+    .spiralLine
+        min-height: 200px
+        background: url('../images/group-lines.png') no-repeat
+        margin-top -100px
+        display: none
+    
+    .spiralAnim
+        background: url('../images/spiralanime.gif') top -100px left -20px no-repeat   
+        background-size: cover ;
+        height: 300px
+    
+    .authBg
+        display: none

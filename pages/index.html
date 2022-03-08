@@ -31,7 +31,7 @@
     
             <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
     
-              <li>
+              <li class="md:mt-0 mt-4">
                 <button id="dropdownNavbarLink" style="padding: 0px 20px 0px 0px;" data-dropdown-toggle="aboutNavbar" class="bg-white py-3 focus:outline-none f-mulish flex justify-between items-center pr-4 pl-3 w-full text-black hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
                     <div class="buttonDeep p-2 mr-2 border border-gray-500" style="border: 1px solid #fff;">
                         <img src="../images/menu-icon.png" />
@@ -44,12 +44,12 @@
     
                     <div class="bg-white shadow dark:bg-gray-700 dark:divide-gray-600" style="min-height: 450px;">
                         <div class="grid grid-cols-12 gap-3">
-                            <div class="col-span-5">
-                                <div class="bg-gray-300 py-3" style="min-height: 450px;">
+                            <div class="md:col-span-5 col-span-12">
+                                <div class="bg-gray-300 py-3 w-full" style="min-height: 450px;">
                                     <h3 class="px-3">Course Categories</h3>
                                     <ul class="py-1" aria-labelledby="dropdownLargeButton">
                                         <li class="">
-                                            <a href="#" class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                            <a  id="data-science" class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
                     
                                                 <div class="bg-gray-700 rounded-full"></div>
                                                 <div>
@@ -173,9 +173,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="">
-
-                            </div>
+                           
 
                         </div>
                       
@@ -186,7 +184,7 @@
               </li>
               
              
-              <li class="mt-">
+              <li class="md:mt-0 mt-4">
                 <div class="flex flex-row">
                     <input class="py-2 px-10 border border-r-0 w-full focus:outline-none bg-transparent rounded-tl-md rounded-bl-md placeholder:text-white focus:text-white" placeholder="Search for a course" />
                     <button class="py-2 bg-transparent focus:outline-none border border-l-0 text-white px-5 rounded-tr-md rounded-br-md">
@@ -195,13 +193,13 @@
                 </div>
               </li>
     
-              <li class="md:mt-0 mt-10 pt-2">
+              <li class="md:mt-0 mt-4 pt-2">
                 <a  href="login.html" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
                     Login
                 </a>
               </li>
     
-              <li class="md:mt-0 mt-10 pt-2">
+              <li class="md:mt-0 mt-4 pt-2">
                 <a  href="register.html" class="py-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
                     Sign Up
                 </a>
@@ -210,7 +208,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
     
     
 
@@ -218,9 +216,9 @@
 
         <div class="container mx-auto">
             <div class="grid-cols-12 grid">
-                <div class="col-span-5">
+                <div class="md:col-span-5 col-span-12">
 
-                    <div class="welcome-text mt-10">
+                    <div class="welcome-text mt-10 md:text-left text-center">
                         <span class="block" style="color: #FFC700;">Enjoy the fastest & smartest courses</span>
                         <h2 class="text-white text-4xl">Learn on your schedule from any device</h2>
                         <p class="text-white mt-4">Get certified by global certification bodies and deepen your expertise at your own convenience any time</p>
@@ -231,10 +229,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-7">
+                <div class="md:col-span-7 col-span-12 md:mt-0 mt-32">
                     <div class="spiralAnim">
                         <div class="absolute" style="margin-top: ">
-                            <img src="../images/laptop.png" style="margin-top: -100px;" />
+                            <img class="md:w-auto w-full" src="../images/laptop.png" style="margin-top: -100px;" />
                         </div>
 
                     </div>
@@ -259,13 +257,13 @@
     <section class="row2">
         <div class="container mx-auto">
             <div class="mt-5">
-                <h2 class="text-2xl" style="font-weight: 800;">Feature Courses</h2>
+                <h2 class="text-2xl md:text-left text-center" style="font-weight: 800;">Feature Courses</h2>
             </div>
 
             <div class="mt-5">
-                <div class="grid grid-cols-12 gap-5">
+                <div class="grid grid-cols-12 gap-5 md:px-0 px-5">
                     
-                    <div class="col-span-3">
+                    <div class="md:col-span-3 col-span-12">
                         <div class="featureCard">
                             <div class="">
                                 <img src="../images/f1.png" width="100%" />
@@ -304,7 +302,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-span-3">
+                    <div class="md:col-span-3 col-span-12">
                         <div class="featureCard">
                             <div class="">
                                 <img src="../images/f2.png" width="100%" />
@@ -343,7 +341,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-span-3">
+                    <div class="md:col-span-3 col-span-12">
                         <div class="featureCard">
                             <div class="">
                                 <img src="../images/f3.png" width="100%" />
@@ -382,7 +380,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-span-3">
+                    <div class="md:col-span-3 col-span-12">
                         <div class="featureCard">
                             <div class="">
                                 <img src="../images/f4.png" width="100%" />
@@ -429,15 +427,16 @@
     </section>
     <section class="row3">
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 gap-12">
-                <div class="col-span-5">
-                    <div>
+            <div class="grid grid-cols-12 mx:gap-12">
+                <div class="md:col-span-5 col-span-12">
+                    <div class="md:px-0 px-5">
                         <img src="../images//globe.png" />
                     </div>
                 </div>
-                <div class="col-span-6">
-                    <div class="">
-                        <h2 class="text-4xl mb-5">
+
+                <div class="md:col-span-6 col-span-12">
+                    <div class="md:px-0 px-5">
+                        <h2 class="text-4xl mb-5 md:mt-0 mt-10 md:text-left text-center">
                             Access Courses <br /><span class="" style="color: #310F77;font-weight: 700;">Anywhere</span>
                         </h2>
 
@@ -455,10 +454,10 @@
     </section>
     <section class="row4">
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 gap-12 pt-20">
+            <div class="grid grid-cols-12 md:gap-12 md:pt-20">
 
-                <div class="col-span-4">
-                    <div>
+                <div class="md:col-span-4 col-span-12">
+                    <div class=" md:text-left text-center">
                         <h3 class="text-4xl text-white"> <span style="color: #5300FF;">Ọpọlọ</span> Global
                             <br /> Innovation
                         </h3>
@@ -469,7 +468,7 @@
 
                 </div>
 
-                <div class="col-span-6 pt-5">
+                <div class="md:col-span-6 col-span-12 pt-5 md:px-0 px-5  md:text-left text-center">
                     <p class="text-white mb-20 text-xl">We have a rich base of global network of partners across Research, Entrepreneurship, Management, Technical, Funding, Mentorship and Coaching support benefits</p>
 
                     <a href="#" class="px-10 py-3 border border-white text-white rounded-md">Learn More</a>
@@ -489,36 +488,49 @@
             <div class="pt-10">
                 <h4 class="text-center text-2xl" style="">Our Partners</h4>
             </div>
-            <div class="flex flex-row gap-20 pt-20 text-center">
+            <div class="grid grid-cols-12 md:gap-20 pt-20 text-center">
                 
-                
-                <img src="../images/image 3.png" style="width: 90px; height: 50px;filter: grayscale(9);" />
-                
-                <img src="../images/image 14.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                
-                <img src="../images/image 10.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 3.png" style="width: 90px; height: 50px;filter: grayscale(9);" />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 14.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 10.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 6.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 13.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 5.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 4.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
 
-                <img src="../images/image 6.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 7.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 12.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 11.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 8.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
+                <div class="md:col-span-2 col-span-4">
+                    <img src="../images/image 9.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
+                </div>
                 
-                <img src="../images/image 13.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                
-                <img src="../images/image 5.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-
-                <img src="../images/image 4.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-
-                
-                
-
             </div>
 
-            <div class="flex flex-row gap-20 pt-20">
-
-                <img src="../images/image 7.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                <img src="../images/image 12.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                <img src="../images/image 11.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                <img src="../images/image 8.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-                <img src="../images/image 9.png" style="width: 90px; height: 60px;filter: grayscale(9);"  />
-            </div>
+            
         </div>
 
 
@@ -527,8 +539,8 @@
     <section class="footer">
 
         <div class="container mx-auto py-20">
-            <div class="grid grid-cols-12 gap-20">
-                <div class="col-span-5">
+            <div class="grid grid-cols-12 md:gap-20 md:px-0 px-4">
+                <div class="md:col-span-5 col-span-12">
                     <div class="">
                         <img src="../images/logo1.png" />
 
@@ -538,7 +550,7 @@
                     </div>
 
                 </div>
-                <div class="col-span-2 pt-20">
+                <div class="md:col-span-2 col-span-6 pt-20">
                     <h2 class="text-white" style="font-weight: 600;">Contacts</h2>
                     <ul class="list mt-4">
                         <li class="text-white my-4"><a href="#">Facebook</a></li>
@@ -546,7 +558,7 @@
                         <li class="text-white"><a href="#">Twitter</a></li>
                     </ul>
                 </div>
-                <div class="col-span-2 pt-20">
+                <div class="md:col-span-2 col-span-6 pt-20">
                     <h2 class="text-white" style="font-weight: 600;">Abouts</h2>
                     <ul class="list mt-4">
                         <li class="text-white my-4"><a href="#">Partners</a></li>
@@ -554,7 +566,7 @@
                         <li class="text-white"><a href="#">Opolo global</a></li>
                     </ul>
                 </div>
-                <div class="col-span-2 pt-20">
+                <div class="md:col-span-2 col-span-6 pt-20">
                     <h2 class="text-white" style="font-weight: 600;">Courses</h2>
                     <ul class="list mt-4">
                         <li class="text-white my-4"><a href="#">Terms & Conditions</a></li>
