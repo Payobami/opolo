@@ -68,7 +68,7 @@
   min-height: 300px;
 }
 .featureCard .card-mini {
-  height: 250px;
+  height: 180px;
   -webkit-box-shadow: 0px 4px 8px rgba(0,0,0,0.09);
   box-shadow: 0px 4px 8px rgba(0,0,0,0.09);
   border-radius: 0 0 5px 5px;
@@ -95,6 +95,11 @@
   background-position: center;
   height: 100vh;
   padding: 50px;
+}
+.gridBg {
+  background: #5300ff;
+  height: 120px;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 650px) {
   .menuWidth {
