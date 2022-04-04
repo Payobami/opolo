@@ -192,17 +192,34 @@
                     </button>
                 </div>
               </li>
+
+              <li class="md:mt-0 mt-4 pt-2 md:hidden">
+                <div class="flex flex-row text-white gap-4">
+                  <i class="fa fa-home pt-1"></i> 
+                  <span>Dashboard</span>
+              </div>
+            </li>
+
+
+              <li class="md:mt-0 mt-4 pt-2 md:hidden">
+                <div class="flex flex-row text-white gap-4">
+                  <i class="fa fa-book pt-1"></i> 
+                  <span>Courses</span>
+              </div>
+            </li>
+
+              <li class="md:mt-0 mt-4 pt-2 md:hidden">
+                <div class="flex flex-row text-white gap-4">
+                  <i class="fa fa-chart-area pt-1"></i> 
+                  <span>Reports</span>
+              </div>
+            </li>
     
               <li class="md:mt-0 mt-4 pt-2">
-                <a  href="login.html" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
-                    Login
-                </a>
-              </li>
-    
-              <li class="md:mt-0 mt-4 pt-2">
-                <a  href="register.html" class="py-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
-                    Sign Up
-                </a>
+                  <div class="flex flex-row text-white gap-4">
+                    <i class="fa fa-user pt-1"></i> 
+                    <span>Adesola Damilola</span>
+                </div>
               </li>
 
             </ul>
@@ -211,34 +228,265 @@
     </nav>
 
     <div class="grid grid-cols-12 gap-5">
-        <div class="col-span-3">
-            <div class="" style="background: #e6e4eb; min-height: 100vh;"></div>
+        <div class="col-span-2 hiddenXs">
+            <div class="" style="background: #e6e4eb; min-height: 100vh;">
+
+                <div class="px-5 pt-10">
+                    <h4 class="text-lg font-bold">Good evening, <br /> Damola</h4>
+                </div>
+
+
+                <div class="mt-16">
+                    
+                    <a href="" class="block px-5 py-3 activex mb-5">
+                        <div class="flex flex-row gap-5">
+                            <span>
+                                <!-- <i class="fa fa-user"></i> -->
+                                <i class="fa fa-home"></i>
+                                
+                            </span>
+                            <span class="f-montserrat">Dashboard</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block px-5 py-3">
+                        <div class="flex flex-row gap-5">
+                            <span>
+                                <i class="fa fa-book"></i>
+                            </span>
+                            <span>Courses</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block px-5 py-3">
+                        <div class="flex flex-row gap-5">
+                            <span>
+                                <i class="fas fa-chart-area"></i>
+                            </span>
+                            <span>Reports</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block px-5 py-3">
+                        <div class="flex flex-row gap-5">
+                            <span>
+                                <i class="fa fa-door-closed"></i>
+                            </span>
+                            <span>Logout</span>
+                        </div>
+                    </a>
+
+
+
+                </div>
+            
+            </div>
         </div>
-        <div class="col-span-9">
-            <div class="grid grid-cols-12 gap-10 pt-20 px-5">
+        <div class="md:col-span-10 col-span-12">
+            <div class="grid md:grid-cols-12 grid-rows-12 gap-10 pt-20 px-5  border-b pb-5">
 
-                <div class="col-span-4">
-                    <div class="gridBg">
+                <div class="md:col-span-4">
+                    <div class="gridBg bt-5">
+
+                        <div class="px-12 pt-5">
+                            <h4 class="text-white text-3xl">13</h4>
+                            <h4 class="text-white text-xl">All Courses</h4>
+                        </div>
+
+                        <div class="mt-10 mx-10">
+                            <a href="" class="px-6 py-2 bg-white rounded-lg">View all Courses</a>
+                        </div>
 
                     </div>
                 </div>
-                <div class="col-span-4">
+
+                <div class="md:col-span-4 col-span-">
                     <div class="gridBg">
 
+                        <div class="px-12 pt-5">
+                            <h4 class="text-white text-3xl">0</h4>
+                            <h4 class="text-white text-xl">Completed Courses</h4>
+                            <p class="text-white">No course assigned</p>
+                        </div>
+
+                        <div class="mt-5 mx-10">
+                            <a href="" class="px-6 py-2 bg-white rounded-lg">View all Courses</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-span-4">
+
+
+                <div class="md:col-span-4 col-span-">
                     <div class="gridBg">
 
+                        <div class="px-12 pt-5">
+                            <h4 class="text-white text-3xl">0</h4>
+                            <h4 class="text-white text-xl">Incompleted Courses</h4>
+                            <p class="text-white">No incompleted course</p>
+                        </div>
+
+                        <div class="mt-5 mx-10">
+                            <a href="" class="px-6 py-2 bg-white rounded-lg">View all Courses</a>
+                        </div>
                     </div>
                 </div>
 
             </div>
+
+
+
+
+
+    
+    <div class="grid grid-cols-12 gap-5 md:px-5 px-5 mt-24">
+                    
+        <div class="md:col-span-3 col-span-12">
+            <div class="featureCard">
+                <div class="">
+                    <a href="course_view.html">
+                        <img src="../images/f1.png" width="100%" />
+                    </a>
+                </div>
+                <div class="shadow-md card-mini px-5">
+                    <div class="hcard flex flex-row gap-5 px-3 py-2">
+
+                        <div class="h-8 rounded-md py-1 px-2 bg-orange-500 block" style="font-size: 14px;font-weight: 600; color: #8E4400;"> Design</div>
+                        <div class="py-1" style="font-size: 14px;font-weight: 800;"> NGN 25,000 </div>
+
+
+                    </div>
+
+                    <div class="vblock flex flex-col gap-3 px-3 py-2">
+                        <div class="mb-3">
+                            <h2 class="text-xl" style="font-weight: 700;">Adobe 360 Max</h2>
+                            
+                        </div>
+
+                        <div>
+                            <i class="fa fa-clock mr-3 text-gray-600"></i>
+                            4 Weeks
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:col-span-3 col-span-12">
+            <div class="featureCard">
+                <div class="">
+                    <img src="../images/f2.png" width="100%" />
+                </div>
+                <div class="shadow-md card-mini px-5">
+                    <div class="hcard flex flex-row gap-3 px-3 py-2">
+
+                        <div class="h-8 rounded-md py-1 px-2 bg-orange-500 block" style="font-size: 14px;font-weight: 600; color: #807A00; background: #FCFF74;">Web Design</div>
+                        <div class="py-1" style="font-size: 14px;font-weight: 800;"> NGN 25,000 </div>
+
+
+                    </div>
+
+                    <div class="vblock flex flex-col gap-3 px-3 py-2">
+                        <div class="mb-3">
+                            <h2 class="text-xl" style="font-weight: 700;">Adobe 360 Max</h2>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-clock mr-3 text-gray-600"></i>
+                            4 Weeks
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:col-span-3 col-span-12">
+            <div class="featureCard">
+                <div class="">
+                    <img src="../images/f3.png" width="100%" />
+                </div>
+                <div class="shadow-md card-mini px-5">
+                    <div class="hcard flex flex-row gap-2 px-3 py-2">
+
+                        <div class="h-8 rounded-md py-1 px-2 bg-orange-500 block" style="font-size: 14px;font-weight: 600; color: #4C7000; background: #D2FF74;">Web Design</div>
+                        <div class="py-1" style="font-size: 14px;font-weight: 800;"> NGN 25,000 </div>
+
+
+                    </div>
+
+                    <div class="vblock flex flex-col gap-3 px-3 py-2">
+                        <div class="mb-3">
+                            <h2 class="text-xl" style="font-weight: 700;">Adobe 360 Max</h2>
+                            
+                        </div>
+
+                        <div>
+                            <i class="fa fa-clock mr-3 text-gray-600"></i>
+                            4 Weeks
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:col-span-3 col-span-12">
+            <div class="featureCard">
+                <div class="">
+                    <img src="../images/f4.png" width="100%" />
+                </div>
+                <div class="shadow-md card-mini px-5">
+                    <div class="hcard flex flex-row gap-5 px-3 py-2">
+
+                        <div class="h-8 rounded-md py-1 px-2 bg-orange-500 block" style="font-size: 14px;font-weight: 600; color: #003A70; background: #74DEFF;">Web Design</div>
+                        <div class="py-1" style="font-size: 13px;font-weight: 800;"> NGN 25,000 </div>
+
+
+                    </div>
+
+                    <div class="vblock flex flex-col gap-3 px-3 py-2">
+                        <div class="mb-3">
+                            <h2 class="text-xl" style="font-weight: 700;">Adobe 360 Max</h2>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-clock mr-3 text-gray-600"></i>
+                            4 Weeks
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
+
+        
     </div>
+
     
 
 
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="../js/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+    
     </body>
     </html>

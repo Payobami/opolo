@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opolo LMS</title>
+
+    <link rel="stylesheet" href="/css/opolo.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tailwind.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+    <!-- choose one -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+   
+</head>
+<body>
+
+    <nav class="px-2 dark:bg-gray-800 dark:border-gray-700" style="background: #232028">
+        <div class="container flex flex-wrap justify-between items-center mx-auto px-4 py-5">
+          <a href="/" class="flex">
+            <img src='../images/logof.png' alt="Logo" class="h-12 w-8x mr-2">
+          </a>
+
+          <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+    
+          <div class="hidden w-full md:block md:w-auto menuWidth" style="width: 700px !importantx;" id="mobile-menu">
+    
+            <ul class="flex flex-col md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium">
+
+                <li class="md:mt-0 mt-4 pt-2">
+                    <a  href="#" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                        Home
+                    </a>
+                </li>
+
+                <li class="md:mt-0 mt-4 pt-2">
+                    <a  href="#" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                        About us
+                    </a>
+                </li>
+
+
+                <li class="md:mt-0 mt-4 pt-2">
+                    <a  href="login.html" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                        Contact
+                    </a>
+                </li>
+
+
+
+                <li class="md:mt-0 mt-4 pt-2">
+                    <a  href="login.html" class="pt-2 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                        Courses
+                    </a>
+                </li>
+
+
+             
+             
+              <li class="md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <input class="py-2 px-10 border border-r-0 w-full focus:outline-none bg-transparent rounded-tl-md rounded-bl-md placeholder:text-white focus:text-white" placeholder="Search for a course" />
+                    <button class="py-2 bg-transparent focus:outline-none border border-l-0 text-white px-5 rounded-tr-md rounded-br-md">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+              </li>
+
+
+
+              <li class="md:mt-0 mt-4 pt-2">
+                <a  href="register.html" class="pt-2 pb-3 bg-white text-black f-mulish px-2 rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                    Sign Up
+                </a>
+              </li>
+    
+              <li class="md:mt-0 mt-4 pt-2">
+                <a  href="login.html" class="pt-2 border pb-3 f-mulish px-2 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1" style="margin-top: -5px !important">
+                    Login
+                </a>
+              </li>
+    
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+    <section class="">
+
+
+        <div class="" style="min-height: 400px;">
+            <div class="lg:container mx-auto">
+
+                <div class="fbg">
+                    <div class="md:w-5/6 mx-auto">
+                        <div class="grid grid-cols-12 gap-10">
+                            <div class="col-span-8 pt-12">
+                                <h3 class="text-6xl text-white font-bold">
+                                    Digital <br /><span class="tprimary">learning</span> and <br />fintech education
+                                </h3>
+
+                                <div class="mt-10">
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut integer tellus suscipit. Dignissim amet eget molestie feugiat aliquam id ullamcorper aenean. Vitae velit fringilla amet bibendum cursus. Pellentesque et gravida eget at. Non, amet id odio fusce tincidunt semper. </p>
+                                </div>
+                            </div>
+                            <div class="col-span-4">
+                                <div class="flex flex-row gap-5 mt-10">
+                                    <div class="border w-50 px-5 py-5 rounded-md" style="height: 350px;">
+                                        <h4 class="underline text-white">Learn a course</h4>
+
+
+                                        <img src="../images/learn.png" class="mt-20" />
+
+                                        <div class="mt-10">
+                                            <a href="#" class="px-3 py-2 bg-white rounded-md">Get Started</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="border w-50 px-5 py-5 rounded-md"  style="height: 350px;">
+                                        <h4 class="underline text-white">Teach a course</h4>
+
+                                        <img src="../images/teach.png" class="mt-20" />
+
+                                        <div class="mt-10">
+                                            <a href="#" class="px-3 py-2 bg-white rounded-md">Get Started</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section3 mt-10 py-16">
+
+            <div class="lg:container mx-auto">
+                <div class="grid grid-cols-12 gap-10">
+                    
+                    <div class="col-span-3 text-white text-center">
+                        <h4 class="text-3xl font-bold">1,500+</h4>
+                        <p>Participants</p>
+                    </div>
+
+                    <div class="col-span-2 text-white text-center">
+                        <h4 class="text-3xl font-bold">8+</h4>
+                        <p>Courses</p>
+                    </div>
+
+                    <div class="col-span-2 text-white text-center">
+                        <h4 class="text-3xl font-bold">31</h4>
+                        <p>Instructors</p>
+                    </div>
+
+                    <div class="col-span-2 text-white text-center">
+                        <h4 class="text-3xl font-bold">180</h4>
+                        <p>Course Enrolment</p>
+                    </div>
+
+                    <div class="col-span-3 text-white text-center">
+                        <h4 class="text-3xl font-bold">15+</h4>
+                        <p>Partners</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="whiteRow py-20">
+            <div class="container mx-auto">
+
+
+                <div class="md:w-5/6 mx-auto mt-10 text-center">
+                    <h3 class="text-3xl font-bold">Learning from the best professionals <img src="../images/jet.png" class="inline ml-4" width="40" /> </h3>
+
+                    <p class="mt-10">You will be learning from a faculty that is composed of thought leaders with decades of expertise in conducting research, training, and consulting for various stakeholders across emerging markets in Africa, Asia, and Latin America as well as in the matured markets of Europe, North America and Australia/New Zealand. These courses would be delivered using relatable use cases, products, and live demonstrations of the technology and its applications.</p>
+
+                    <p class="mt-10">Participants will also have the privilege of viewing the landscape through the lens of thought leaders consisting of:</p>
+                </div>
+
+
+
+                <div class="grid grid-cols-12 gap-10 mt-16">
+                    
+                    <div class="col-span-3 text-black text-center">
+                        <img src="../images/policy.png" class="mx-auto" width="70" />
+                        <h4 class="text-xl font-bold mt-4">Policy Maker</h4>
+                        <p class="mt-2">Views from past and current Policy Makers and Regulators</p>
+                        
+                    </div>
+
+
+                    <div class="col-span-3 text-black text-center">
+                        <img src="../images/finance.png" class="mx-auto" width="70" />
+                        <h4 class="text-xl font-bold mt-4">Financial Institutions leaders</h4>
+                        <p class="mt-2">Views from Incumbent Financial Institutions leaders</p>
+                    </div>
+
+
+                    <div class="col-span-3 text-black text-center">
+                        <img src="../images/techpreneur.png" class="mx-auto" width="70" />
+                        <h4 class="text-xl font-bold mt-4">Techpreneurs</h4>
+                        <p class="mt-2">Views from serial Entrepreneurs/Techpreneurs</p>
+                    </div>
+
+
+                    <div class="col-span-3 text-black text-center">
+                        <img src="../images/investor.png" class="mx-auto" width="70" />
+                        <h4 class="text-xl font-bold mt-4">Investors and Academics</h4>
+                        <p class="mt-2">Views from Investors and Academics</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            
+        </div>
+
+        <div class="section5 py-16">
+            <div class="container mx-auto">
+                <div class="">
+                    <h4 class="text-white font-bold text-2xl mb-10">Featured Courses</h4>
+
+                    <div class="mt-5 grid grid-cols-12 gap-10">
+
+                        <div class="col-span-3">
+                            <div class="bg-white rounded-br-md rounded-bl-md pb-8" style="min-height: 350px;">
+                                <div class="" style="background: url('../images/design.png');height: 180px;"></div>
+                                <div class="p-5">
+                                    <h4 class="text-lg font-bold">Digital Financial Services: Product Innovation and Design</h4>
+
+                                    <div class="py-5">
+                                        <p>This course equips participants with a systematic process for developing...</p>
+                                    </div>
+
+                                    <div class="text-center mt-4">
+                                        <a href="#" class="text-center">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div class="bg-white rounded-br-md rounded-bl-md pb-8" style="min-height: 350px;">
+                                <div class="" style="background: url('../images/framework.png');height: 180px;"></div>
+                                <div class="p-5">
+                                    <h4 class="text-lg font-bold">Digital Financial Service: DFS Risk Management Framework</h4>
+
+                                    <div class="py-5">
+                                        <p>This course is meant to equip participants with the ability to establish...</p>
+                                    </div>
+
+                                    <div class="text-center mt-4">
+                                        <a href="#" class="text-center">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-span-3">
+                            <div class="bg-white rounded-br-md rounded-bl-md pb-8" style="min-height: 350px;">
+                                <div class="" style="background: url('../images/crypto.png');height: 180px;"></div>
+                                <div class="p-5">
+                                    <h4 class="text-lg font-bold">Cryptocurrencies and Other Digital Assets</h4>
+
+                                    <div class="py-5">
+                                        <p>There have been many attempts to create digital money in the past, but...</p>
+                                    </div>
+
+                                    <div class="text-center mt-4">
+                                        <a href="#" class="text-center">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div class="bg-white rounded-br-md rounded-bl-md pb-8" style="min-height: 350px;">
+                                <div class="" style="background: url('../images/cybersecurity.png');height: 180px;"></div>
+                                <div class="p-5">
+                                    <h4 class="text-lg font-bold">Introduction to Cybersecurity</h4>
+
+                                    <div class="py-5">
+                                        <p>The training begins by giving a broad overview of information before...</p>
+                                    </div>
+
+                                    <div class="text-center mt-4">
+                                        <a href="#" class="text-center">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="whiteRow">
+
+            <div class="container mx-auto">
+                <div class="py-16">
+                    <h5 class="text-center font-bold text-2xl">Our Partners</h5>
+                </div>
+
+                <div class="grid grid-cols-12">
+
+                    <div class="col-span-2">
+                        <img src="../images/partners/image 29.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2">
+                        <img src="../images/partners/image 30.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2">
+                        <img src="../images/partners/image 47.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2">
+                        <img src="../images/partners/image 32.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2">
+                        <img src="../images/partners/image 33.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 34.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 35.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 36.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 37.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 38.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 39.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 40.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 41.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 42.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 43.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 44.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 45.png" class="mx-auto" />
+                    </div>
+
+                    <div class="col-span-2 text-center">
+                        <img src="../images/partners/image 46.png" class="mx-auto" />
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="section6">
+
+            <div class="mt-10">
+
+                <div class="swiper-container swiper-two">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 59.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 60.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 61.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 62.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 63.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 64.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 65.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 66.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 67.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 68.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 69.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 70.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 71.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 72.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 73.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 74.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 75.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 75.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 76.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 77.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 78.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 79.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 80.png' class="bg-gray-300">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 81.png' class="bg-gray-300">
+                            </a>
+                        </div>
+    
+
+                        <div class="swiper-slide">
+                            <a href="#" class="">
+                                <img src='../images/slider/Rectangle 82.png' class="bg-gray-300">
+                            </a>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="footer">
+
+        <div class="container mx-auto py-20">
+            <div class="grid grid-cols-12 md:gap-12 md:px-0 px-4">
+                
+                <div class="md:col-span-2 col-span-6 pt-20">
+                    <h2 class="text-white" style="font-weight: 600;">Explore</h2>
+                    <ul class="list mt-4">
+                        <li class="text-white my-4"><a href="#">Home</a></li>
+                        <li class="text-white my-4"><a href="#">About Us</a></li>
+                        <li class="text-white"><a href="#">Our Courses</a></li>
+                        <li class="text-white"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-2 col-span-6 pt-20">
+                    <h2 class="text-white" style="font-weight: 600;">Clients</h2>
+                    <ul class="list mt-4">
+                        <li class="text-white my-4"><a href="#">Become an Instructor</a></li>
+                        <li class="text-white my-4"><a href="#">Register</a></li>
+                    </ul>
+                </div>
+
+
+
+
+                <div class="md:col-span-3 col-span-6 pt-20">
+                    <h2 class="text-white" style="font-weight: 600;">Address</h2>
+                    <ul class="list mt-4">
+                        <li class="text-white my-4"><a href="#">Email: info@fintechinstituteng.org</a></li>
+                        <li class="text-white my-4"><a href="#">Akin: +234 907 088 4040,</a></li>
+                        <li class="text-white"><a href="#">Ololade: +234 802 925 4040</a></li>
+                        <li class="text-white"><a href="#">+44 7960 124977, +1(416) 844 6902</a></li>
+                        <li class="text-white"><a href="#">fintechinstituteng.org</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4 col-span-6 pt-20 px-10">
+                    <div class=" py-2">
+                        <div class="flex flex-row border w-100 rounded-md">
+                            <input class="py-3 px-2 bg-transparent text-white" placeholder="Email Address" />
+
+                            <button class="px-5 py- bg-pink-300 text-white rounded-md mt-1" style="margin-left: 20px; font-size: 12px; height: 40px;">Subscribe</button>
+                        </div>
+                    </div>
+                    <ul class="list mt-5">
+                        <li class="text-white my-4">Find our social media</li>
+                    </ul>
+
+                    <div>
+                        <ul class="flex flex-row gap-4">
+
+                            <li class=" rounded-full w-12 h-12 border pl-3 pt-3">
+                                <a href="#"><i data-feather="facebook" class="text-white"></i></a>
+                            </li>
+
+                            <li class=" rounded-full w-12 h-12 border pl-3 pt-3">
+                                <a href="#"><i data-feather="twitter" class="text-white"></i></a>
+                            </li>
+
+                            <li class=" rounded-full w-12 h-12 border pl-3 pt-3">
+                                <a href="#"><i data-feather="instagram" class="text-white"></i></a>
+                            </li>
+
+                            <li class=" rounded-full w-12 h-12 border pl-3 pt-3">
+                                <a href="#"><i data-feather="linkedin" class="text-white"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-10 border-t">
+
+            </div>
+        </div>
+
+    </section>
+
+    
+
+
+
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="../js/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+ <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ -->
+
+<script>
+
+feather.replace()
+
+    //.swiper-container
+
+    var swiper = new Swiper('.swiper-container.swiper-two', {
+        
+        lazyLoading: true,
+        direction: 'horizontal',
+        autoplay: true,
+
+        
+        slidesPerView: 5,
+        spaceBetween: 5,
+
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 4,
+        spaceBetween: 9
+        },
+        // when window width is >= 480px
+        480: {
+        slidesPerView: 5,
+        spaceBetween: 0
+        },
+        // when window width is >= 640px
+        640: {
+        slidesPerView: 6,
+        spaceBetween: 0
+        }
+    }
+    });
+
+</script>
+    
+</body>
+</html>

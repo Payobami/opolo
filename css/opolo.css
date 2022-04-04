@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Muli|PT+Serif|Prociono|Slabo+27px|Source+Sans+Pro|Trirong|Ubuntu|Aref+Ruqaa|Great+Vibes|Philosopher|Roboto+Condensed|Bitter|Source+Sans+Pro|Acme|Raleway|Work+Sans|Tangerine:wght@900|Oleo+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Muli|PT+Serif|Prociono|Slabo+27px|Source+Sans+Pro|Trirong|Ubuntu|Aref+Ruqaa|Great+Vibes|Philosopher|Roboto+Condensed|Bitter|Source+Sans+Pro|Acme|Raleway|Work+Sans|Tangerine:wght@900|Oleo+Script:wght@700&display=swap|Montserrat");
+.f-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.activex {
+  background: #e3dcf2;
+}
 .buttonDeep {
   background: #24085e !important;
 }
@@ -98,8 +104,38 @@
 }
 .gridBg {
   background: #5300ff;
-  height: 120px;
+  min-height: 170px;
   border-radius: 10px;
+  padding-bottom: 15px;
+}
+.section3 {
+  background: #92407d;
+  min-height: 200px;
+}
+.section5 {
+  min-height: 400px;
+  background: #2f0123;
+}
+.section6 {
+  min-height: 230px;
+  background: #d2d2d2;
+}
+.whiteRow {
+  min-height: 450px;
+  background: #fff;
+}
+.fbg {
+  background: url("../images/fbg.png") no-repeat;
+  min-height: 700px;
+  padding: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.tprimary {
+  color: #92407d;
 }
 @media only screen and (min-width: 650px) {
   .menuWidth {
@@ -121,6 +157,9 @@
     height: 300px;
   }
   .authBg {
+    display: none;
+  }
+  .hiddenXs {
     display: none;
   }
 }

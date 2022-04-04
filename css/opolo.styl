@@ -1,10 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Muli|PT+Serif|Prociono|Slabo+27px|Source+Sans+Pro|Trirong|Ubuntu|Aref+Ruqaa|Great+Vibes|Philosopher|Roboto+Condensed|Bitter|Source+Sans+Pro|Acme|Raleway|Work+Sans|Tangerine:wght@900|Oleo+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Muli|PT+Serif|Prociono|Slabo+27px|Source+Sans+Pro|Trirong|Ubuntu|Aref+Ruqaa|Great+Vibes|Philosopher|Roboto+Condensed|Bitter|Source+Sans+Pro|Acme|Raleway|Work+Sans|Tangerine:wght@900|Oleo+Script:wght@700&display=swap|Montserrat");
 @import"nib"
 @import"typographic"
 
 rupture.scale = 0 400px 650px 800px 1050px 1800px
 rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
 
+.f-montserrat
+    font-family: 'Montserrat', sans-serif
+
+
+.activex
+    background: #E3DCF2
 
 
 .buttonDeep
@@ -105,9 +111,40 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
 
 .gridBg
     background: #5300FF
-    height: 120px
+    min-height: 170px
     border-radius: 10px
+    padding-bottom: 15px
 
+
+.section3
+    background: #92407D
+    min-height: 200px
+
+.section5
+    min-height: 400px
+    background: #2F0123
+
+.section6
+    min-height: 230px
+    background: #d2d2d2
+
+.whiteRow
+    min-height: 450px
+    background: #ffffff  
+
+
+
+
+.fbg
+    background: url('../images/fbg.png') no-repeat 
+    min-height: 700px
+    padding: 20px 0 20px 0
+    margin: 20px 0 20px 0
+    background-position: center
+    background-size: cover
+
+.tprimary
+    color: #92407D
 
 +above('m')
     .menuWidth
@@ -128,4 +165,7 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
         height: 300px
     
     .authBg
+        display: none
+    
+    .hiddenXs
         display: none
